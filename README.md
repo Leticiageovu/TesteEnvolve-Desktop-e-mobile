@@ -1,4 +1,4 @@
-# TesteEnvolve-Desktop-e-mobile
+# Teste Envolve -Desktop-e-mobile
 
 
 Este projeto consiste na criação de um site responsivo, desenvolvido para as versões desktop e mobile, seguindo as diretrizes de design estabelecidas no Figma.
