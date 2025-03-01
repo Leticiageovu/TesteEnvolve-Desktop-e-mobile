@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formação Excel Master</title>
+    <link rel="stylesheet" href="Assets/Css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>    
+</head>
+<body>
+    <header >
+        <div class="desktop">
+            <div class="container">
+                <div class="container-search">
+                    <img src="Assets/Image/search.png" alt="icon-desktop" class="icon-desktop">
+                    <input type="text" class="desk-box" placeholder="Encontre notícias, artigos e muito mais!">
+                        
+                </div>
+                <div class="right-section" >
+                    <div class="youtube">
+                        <img src="Assets/Image/youtube.png" alt="YouTube Logo">
+                        <a href="#" class="ytb">Aprender no Youtube</a>
+                    </div>
+                    <button class="matricule-se">Matricule-se</button>
+                </div>    
+            </div>
+        </div>   
+        <div class="mobile">
+            <div class="container-mob">
+                <button class="menu-btn" id="menuBtn">
+                    <img src="Assets/Image/menu.png" alt="menu">
+                </button>
+                <button class="search-btn" id="searchBtn">
+                    <img src="Assets/Image/search.png" alt="search">
+                </button>
+            </div>
+        </div>        
+    </header>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2>Menu</h2>
+            <button class="close-btn" id="closeSidebarBtn">x</button>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="#">Categorias</a></li>
+            <li><a href="#">Apresentações</a></li>
+            <li><a href="#">Panilhas</a></li>
+            <li><a href="#">Gráfico</a></li>
+            <li><a href="#">Excel</a></li>
+            <li><a href="#">Artigos e Planilhas de Leitores</a></li>
+            <li><a href="#">Cursos</a></li>
+            <li><a href="#">Consultoria</a></li>
+            <li><a href="#">Planilhas Prontas</a></li>
+            <li><a href="#">Loja</a></li>
+        </ul>
+    </div>
+
+<!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+        <button class="close-search" id="closeSearchBtn">×</button>
+        <form class="search-form">
+            <input type="text" class="search-input" placeholder="Search..." autocomplete="off">
+        </form>
+    </div>
+    
+    <!-- Background Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <nav class="categorias-desk">
+        <a href="#">
+        <img src="assets/image/CaretDownFill.png" alt="caretdown" class="caretdown"> </a>
+        <ul id="categorias"></ul>
+    </nav>    
+    <main>
+        <div class="banner-desk">
+            <div class="banner">
+                <img src="assets/image/banner.png" alt="Banner Principal" class="img-banner">
+                <div class="formacao">
+                    <h1>Formação Excel Master</h1>
+                    <p class="excel">Formação Completa em Excel!</h3>
+                    
+                    <button class="aprender">Quero Aprender!</button>
+                </div>
+                <div class="conteudo">
+                    <ul >
+                        <li>Excel</li>
+                        <li>Lógica</li>
+                        <li>VBA</li>
+                        <li>Power Query</li>
+                        <li>Power BI</li>
+                        <li>Dax</li>
+                        <li>Dashboards</li>
+                        <li>Financeiro e HP12C</li>
+                        <li>Powerpoint</li>
+                        <li>Word</li>
+                    </ul>    
+                </div>    
+            </div>
+        </div>
+        <div class="banner-mob">
+            <img src="Assets/Image/banner mobile.png" class="banner-mobile" alt="banner">
+            <div class="text-banner">
+                <h2 class="banner-title">Formação Excel Master</h2>
+                <p class="banner-subtitle">Formação Completa em Excel</p>
+   
+                <button class="aprender-mob">Quero Aprender!</button>
+            </div>  
+        </div>
+        
+        <section>
+            <div id="topicos">
+               <div><button class="bttn">Lógica</button></div>
+               <div><button class="bttn">VBA</button></div>
+               <div><button class="bttn">Power Query</button></div>
+               <div><button class="bttn">Power BI</button></div>
+               <div><button class="bttn">Dax</bsutton></div>
+               <div><button class="bttn">Dashboards</button></div>
+               <div><button class="bttn">Financeiro e HP12C</button></div>
+               <div><button class="bttn">Powerpoint</button></div>
+               <div><button class="bttn">Word</button></div>
+               <div><button class="bttn">Excel</button></div>
+            </div>
+            <div id="mob-topicos">
+                <div><button class="buttoon">Lógica</button></div>
+                <div><button class="buttoon">VBA</button></div>
+                <div><button class="buttoon">Power Query</button></div>
+                <div><button class="buttoon">Power BI</button></div>
+                <div><button class="buttoon">Dax</button></div>
+                <div><button class="buttoon">Dashboards</button></div>
+                <div><button class="buttoon">Financeiro e HP12C</button></div>
+                <div><button class="buttoon">Powerpoint</button></div>
+                <div><button class="buttoon">Word</button></div>
+                <div><button class="buttoon">Excel</button></div>
+             </div>
+        </section>
+        <div class="containers">
+            <div class="container-lastarticle-desktop">
+                <div class="container-lastarticle"> 
+                    <h2 class="section-title">Últimos Artigos</h2>  
+                    <div class="container-last">
+                        <div class="image-lastarticle"></div>    
+                        <div class="last-article">
+                            <h2 class="article-title" >Planilha de Manutenção de
+                                Frota de Veículos Gratuitos</h2>
+                                <p class="article-text">Lorem ipsum dolor sit amet consectetur adipiscing elit et enim dictumst, aliquam nam hac morbi quisque eu nisl vivamus. Maecenas montes turpis sollicitudin hac nullam fames condimentum iaculis, quisque vestibulum netus porttitor est fusce tincidunt ornare parturient, placerat sagittis ultrices.
+                                </p>
+                                <p class="article-text">Velit feugiat aliquet sodales nec magna lacinia primis fermentum aenean viverra cubilia gravida, ultrices rutrum libero porta ullamcorper euismod nibh netus pulvinar, bibendum placerat imperdiet ante ridiculus curae turpis.
+                                </p>
+                                <button class="btn">Ler mais</button>
+                        </div>    
+                    </div>
+                </div>
+            </div> 
+            <div class="container-articles-desktop">
+                <div class="container-articles">
+                    <div class="card-article">
+                        <div class="image-article"></div>
+                        <div class="card-text">
+                            <h3 class="card-title">Planilha de Manutenção de Frota de Veículos Gratuitos</h3>
+                            <a href="#" class="read">Leia o post completo</a>
+                        </div>    
+                    </div>
+                    <div class="card-article">
+                        <div class="image-article"></div>
+                        <div class="card-text">
+                            <h3 class="card-title">Planilha de Manutenção de Frota de Veículos Gratuitos</h3>
+                            <a href="#" class="read">Leia o post completo</a>
+                        </div>    
+                    </div>
+                    <div class="card-article">
+                        <div class="image-article"></div>
+                        <div class="card-text">
+                            <h3 class="card-title">Planilha de Manutenção de Frota de Veículos Gratuitos</h3>
+                            <a href="#" class="read">Leia o post completo</a>
+                        </div>    
+                    </div>
+                    <div class="card-article">
+                        <div class="image-article"></div>
+                        <div class="card-text">
+                            <h3 class="card-title">Planilha de Manutenção de Frota de Veículos Gratuitos</h3>
+                            <a href="#" class="read">Leia o post completo</a>
+                        </div>    
+                    </div>
+                </div>
+            </div>      
+            
+            <div class="container-lastarticlemob"> 
+                <h2 class="section-titlemob">Últimos Artigos</h2>  
+                <div class="container-lastmob">
+                    <div class="image-lastarticlemob"></div>    
+                    <div class="last-articlemob">
+                        <h2 class="article-titlemob" >Planilha de Manutenção de
+                            Frota de Veículos Gratuitos</h2>
+                            <p class="article-textmob">Lorem ipsum dolor sit amet consectetur adipiscing elit et enim dictumst, aliquam nam hac morbi quisque eu nisl vivamus. Maecenas montes turpis sollicitudin hac nullam fames condimentum iaculis, quisque vestibulum netus porttitor est fusce tincidunt ornare parturient, placerat sagittis ultrices.
+                            </p>
+                            <p class="article-text1mob">Velit feugiat aliquet sodales nec magna lacinia primis fermentum aenean viverra cubilia gravida, ultrices rutrum libero porta ullamcorper euismod nibh netus pulvinar, bibendum placerat imperdiet ante ridiculus curae turpis.
+                            </p>
+                        <a href="#"> <button class="btn">Ler mais</button></a>
+                    </div>    
+                </div>
+            </div>
+            <div   class="container-articles-mobile">
+                <div class="container-articlesmob">
+                    <div class="card-articlemob">
+                        <div class="image-articlemob"></div>
+                        <div class="card-textmob">
+                            <h3 class="card-titlemob">Planilha de Manutenção de Frota de Veículos Gratuitos</h3>
+                            <a href="#" class="readmob">Leia o post completo</a>
+                        </div>    
+                    </div>
+                    <div class="card-articlemob">
+                        <div class="image-articlemob"></div>
+                        <div class="card-textmob">
+                            <h3 class="card-titlemob">Planilha de Manutenção de Frota de Veículos Gratuitos</h3>
+                            <a href="#" class="readmob">Leia o post completo</a>
+                        </div>    
+                    </div>
+                    <div class="card-articlemob">
+                        <div class="image-articlemob"></div>
+                        <div class="card-textmob">
+                            <h3 class="card-titlemob">Planilha de Manutenção de Frota de Veículos Gratuitos</h3>
+                            <a href="#" class="readmob">Leia o post completo</a>
+                        </div>    
+                    </div>
+                    <div class="card-articlemob">
+                        <div class="image-articlemob"></div>
+                        <div class="card-textmob">
+                            <h3 class="card-titlemob">Planilha de Manutenção de Frota de Veículos Gratuitos</h3>
+                            <a href="#" class="readmob">Leia o post completo</a>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script defer src="assets/js/script.js"></script>
+</body>
+</html>    
